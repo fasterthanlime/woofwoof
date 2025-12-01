@@ -58,6 +58,43 @@ Rust API (compress/decompress)
 
 The C++ woff2 library handles the complex font table transformations that make WOFF2 compress so well. Instead of linking to C brotli, we provide stub headers and implement the brotli functions in Rust, forwarding to the pure Rust brotli crate.
 
+## Sponsors
+
+Thanks to all individual sponsors:
+
+<p> <a href="https://github.com/sponsors/fasterthanlime">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/github-dark.svg">
+<img src="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/github-light.svg" height="40" alt="GitHub Sponsors">
+</picture>
+</a> <a href="https://patreon.com/fasterthanlime">
+    <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/patreon-dark.svg">
+    <img src="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/patreon-light.svg" height="40" alt="Patreon">
+    </picture>
+</a> </p>
+
+...along with corporate sponsors:
+
+<p> <a href="https://aws.amazon.com">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/aws-dark.svg">
+<img src="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/aws-light.svg" height="40" alt="AWS">
+</picture>
+</a> <a href="https://zed.dev">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/zed-dark.svg">
+<img src="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/zed-light.svg" height="40" alt="Zed">
+</picture>
+</a> <a href="https://depot.dev?utm_source=woofwoof">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/depot-dark.svg">
+<img src="https://github.com/fasterthanlime/woofwoof/raw/main/static/sponsors/depot-light.svg" height="40" alt="Depot">
+</picture>
+</a> </p>
+
+...without whom this work could not exist.
+
 ## License
 
 Licensed under either of:
@@ -68,10 +105,3 @@ Licensed under either of:
 at your option.
 
 The bundled woff2 library is licensed under the MIT license.
-
-## Sponsorship
-
-If you find this useful, consider sponsoring the author:
-
-- [GitHub Sponsors](https://github.com/sponsors/fasterthanlime)
-- [Patreon](https://patreon.com/fasterthanlime)
