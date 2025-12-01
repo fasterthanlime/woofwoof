@@ -64,6 +64,16 @@ Rust API (compress/decompress)
 
 The C++ woff2 library handles the complex font table transformations that make WOFF2 compress so well. Instead of linking to C brotli, we provide stub headers and implement the brotli functions in Rust, forwarding to the pure Rust brotli crate.
 
+## Testing
+
+The test suite compresses a real font (Roboto) to WOFF2, verifies the WOFF2 signature, then decompresses it back. Note that roundtripped fonts are not byte-identical to the original due to WOFF2's font table transformations, but they are semantically equivalent.
+
+```bash
+cargo test
+```
+
+For manual verification, the compressed and decompressed fonts can be inspected with tools like [FontGoggles](https://fontgoggles.org/).
+
 ## Credits
 
 This crate was inspired by [bodoni/woff](https://github.com/bodoni/woff), which pioneered the approach of wrapping Google's woff2 C++ library for Rust.
@@ -109,4 +119,4 @@ Licensed under either of:
 
 at your option.
 
-The bundled woff2 C++ library is licensed under the MIT license.
+The bundled [woff2](https://github.com/google/woff2) C++ library is licensed under the MIT license.
