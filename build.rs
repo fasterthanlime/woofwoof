@@ -3,6 +3,7 @@ fn main() {
     cc::Build::new()
         .cpp(true)
         .flag("-std=c++11")
+        .flags(&["-include", "cstdint"])
         .include("vendor/woff2/include")
         .include("include") // Our brotli stub headers
         // woff2 source files (excluding CLI tools and fuzzers)
